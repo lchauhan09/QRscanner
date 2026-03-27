@@ -173,7 +173,7 @@
 
       try {
         // Updated URL pointing to your netlify functions backend
-        const res = await fetch("qrscannern.netlify.app/.netlify/functions/sendEmail", {
+        const res = await fetch("https://qrscannern.netlify.app/.netlify/functions/sendEmail", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
